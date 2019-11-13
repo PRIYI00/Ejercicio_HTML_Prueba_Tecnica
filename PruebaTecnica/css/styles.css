@@ -9,15 +9,19 @@
 */
 
 /* reset basico para eliminar estilos de todos los browser - user-agent */
-*{
+/**{
     margin: 0;
     padding: 0;
-}
+}*/
 
 body{
     font-size: 16px;
     font-family: Arial, sans-serif;
-    text-align: center;
+    /*text-align: center;*/
+}
+
+img{
+    width: 100%;
 }
 
 h1{
