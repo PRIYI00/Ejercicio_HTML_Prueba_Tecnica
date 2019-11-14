@@ -24,6 +24,12 @@ img{
     width: 100%;
 }
 
+code{
+    color: red;
+    background-color: lightgray;
+    font-family: monospace;
+}
+
 h1{
     color: #09C;
     font-size: 3em;
