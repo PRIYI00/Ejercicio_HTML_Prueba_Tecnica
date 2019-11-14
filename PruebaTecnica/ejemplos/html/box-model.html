@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Box Model </title>
+
+    <base href="/PruebaTecnica/">
+    <style>
+        body {
+            padding: 20px;
+        }
+        p .prueba {
+            color: teal;
+            border: 5px solid green;
+            margin: 10px;
+            padding: 20px;
+        }
+        span {
+            border: 3px dotted red;
+            padding: 5px;
+        }
+        p {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .box {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            
+            border: 2px solid teal;
+            background-color: royalblue;
+            border-radius: 10px;
+
+            color: white;
+            font-size: 5em;
+            text-align: center;
+        }
+        section {
+            border: 1px solid rgb(206, 205, 205);
+            background-color: rgb(245, 245, 245);
+            padding: 10px;
+            margin-bottom: 5px;
+
+            -webkit-box-shadow: 20px 20px 10px 0px rgba(0,0,0,0.34);
+            -moz-box-shadow: 20px 20px 10px 0px rgba(0,0,0,0.34);
+            box-shadow: 20px 20px 10px 0px rgba(0,0,0,0.34);
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html"> Volver </a>
+    <h1> Box Model </h1>
+    <p class="prueba"> Toda Etiqueta de HTML tiene una estructura de Caja </p>
+
+    <section>
+        <h2> Display </h2>
+        <p> <code> display </code> es el atributo para gestionar si es linea o bloque ( existen muchos mas displays. ejem: flex )</p>
+        <p> *trick: usar inspector para verlo </p>
+        <dl>
+            <dt> Block </dt>
+            <dd> Elemento que ocupa todo el ancho del Elemento padre. </dd>
+            <dt> Inline </dt>
+            <dd> Elemento que ocupa lo que tenga su contenido. </dd>
+            <dt> Inline-Block </dt>
+            <dd> Los elementos inline-block fluyen con el texto y demás elementos como si fueran elementos en-línea y además respetan el ancho, el alto y los márgenes verticales. </dd>
+        </dl>
+
+        <p> Lorem <span> ipsum, dolor sit amet consectetur adipisicing elit. </span> Ratione iusto dolores aperiam cum, at harum enim deleniti neque, consequuntur fugiat deserunt placeat, provident accusantium rerum vitae fugit totam odit nesciunt.</p>
+
+        <div class="box"> 1 </div>
+        <div class="box"> 2 </div>
+    </section>
+
+    <section>
+        <h2> OverFlow </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolore, debitis nam ea laboriosam, quos doloremque harum rem maxime nisi quod officia quae? Esse deleniti harum, facilis fugit rerum magni? </p>
+    </section>
+</body>
+</html>
