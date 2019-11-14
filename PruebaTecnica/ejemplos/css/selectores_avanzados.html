@@ -37,13 +37,24 @@
         }
         /* Se muestran de color azul todos los enlaces que tengan 
         un atributo "class" con el valor "externo" */
-        .selectorAtributos a[class="externo"] { 
+        a[class="externo"] { 
             color: red; 
+        }
+        /* Se muestran de color azul todos los enlaces que apunten 
+        al sitio "http://www.ejemplo.com" */
+        .selectorAtributos a[href="https://www.youtube.com/"] { 
+            color: green; 
+        }
+        /* Se muestran de color azul todos los enlaces que tengan 
+        un atributo "class" en el que al menos uno de sus valores
+        sea "externo" */
+        .selectorAtributos a[class~="externo"] { 
+            color: blue; 
         }
     </style>
 </head>
 <body>
-    <a href="index.html"> Volver </a>
+    <a class="externo" href="index.html"> Volver </a>
     <h1> Selectores Avanzados </h1>
 
     <section> 
@@ -65,7 +76,7 @@
         <a class="prueba01" href="https://flukeout.github.io/"> El juego de la Cena </a> <br>
         <a class="externo" href="https://gist.github.com/chrisman/fcb0a88459cd98239dbe6d2d200b02d1"> Solución del juego de la Cena </a> <br>
         <a href="https://www.youtube.com/"> Youtube </a> <br>
-        <a href="https://www.google.es/"> Google </a> <br>
+        <a href="https://www.google.es/"> Google </a> <br> 
     </section>
 </body>
 </html>
