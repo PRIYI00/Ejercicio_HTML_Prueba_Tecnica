@@ -14,6 +14,16 @@
     padding: 0;
 }*/
 
+/* Estructura de una plantilla css */
+/*
+    1. Reset.
+    2. @keyframes.
+    3. Estilos Generales a todas las Etiquetas
+    4. Layouts
+    5. Clases 
+    6. Ids (cosas mas especificas)
+*/
+
 body{
     font-size: 16px;
     font-family: Arial, sans-serif;
@@ -102,4 +112,41 @@ td:hover{
     height: 150px;
     background-color: #0099CC;  
     animation: mymove 2s infinite alternate;
+}
+
+.box {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    
+    border: 2px solid teal;
+    background-color: royalblue;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 5em;
+    text-align: center;
+}
+
+section {
+    border: 1px solid rgb(206, 205, 205);
+    background-color: rgb(245, 245, 245);
+    padding: 10px;
+    margin-bottom: 5px;
+
+    -webkit-box-shadow: 20px 20px 10px 0px rgba(0,0,0,0.34);
+    -moz-box-shadow: 20px 20px 10px 0px rgba(0,0,0,0.34);
+    box-shadow: 20px 20px 10px 0px rgba(0,0,0,0.34);
+}
+
+main {
+    padding-bottom: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
 }
